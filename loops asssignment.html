@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> CALCULATOR </h1>
+
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+
+   
+
+    <select id="select">
+        <option value="Select"> Select </option>
+        <option value="Add"> Add </option>
+        <option value="Minus"> Minus </option>
+        <option value="Mul"> Mul </option>
+        <option value="Divide"> Divide </option>
+        <option value="Mod"> Mod </option>
+    </select>
+    <script>
+        document.getElementById("select").onclick=function()
+        {
+            let a=Number(document.getElementById("inp1").value);
+
+            let b=Number(document.getElementById("inp2").value);
+
+            let re=document.getElementById("select").value
+            if (re=="add")
+            console.log(a+b)
+
+            if (re=="minus")
+            console.log(a-b)
+
+            if (re=="multiply")
+            console.log(a*b)
+
+            if (re=="divide")
+            console.log(a/b)
+
+            if (re=="Mod")
+            console.log(a%b)
+
+        }
+    </script>
+</body>
+</html>

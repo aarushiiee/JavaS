@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+                                        // SET INTERVAL AND SET TIMEOUT
+
+        // setInterval(function(){
+        //     document.write("HEYY!!")
+        // },3000)
+
+        // setTimeout(function(){
+        //     console.log("Hey Java Script!")
+        // },2000)
+
+        // let a= 10
+        // let b = 30
+        // console.log("add",a+b)
+
+        // setTimeout(function(){
+        //     console.log("minus",a-b)
+        // },2000)
+
+        // console.log("mul",a*b)
+
+                                                // PROMISE
+        // let condition = false
+
+        // let prom = new Promise(function(resolve, reject){
+        //     if (condition){
+        //         resolve("successful")
+        //     }
+        //     else{
+        //         reject("unsuccessful")
+        //     }
+        // })   
+        
+        
+        // prom.then((item)=>{
+        //     console.log(item)
+        // }).catch((error)=>{
+        //     console.log(error)
+        // })
+                                                // FETCH
+        fetch('readme.txt').then((item)=>{
+            return item.text()
+        }).then((data)=>{
+            console.log(data)
+        })
+
+        
+
+
+    </script>
+</body>
+</html>
